@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br"> <!-- Define o idioma da página como português do Brasil -->
+<head>
+    <meta charset="UTF-8"> <!-- Define o conjunto de caracteres como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Define a viewport para responsividade -->
+    <title>Projeto Bootstrap</title> <!-- Título da página -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"> <!-- Link para o arquivo CSS do Bootstrap -->
+    <style>
+        body {
+            padding-top: 20px; /* Espaçamento no topo do corpo */
+            padding-bottom: 20px; /* Espaçamento na parte inferior do corpo */
+        }
+
+        .carousel-item img {
+            max-height: 500px; /* Altura máxima das imagens do carrossel */
+            object-fit: cover; /* Ajusta a imagem para cobrir o container sem distorção */
+        }
+
+        .card-img-top {
+            max-height: 200px; /* Altura máxima das imagens dos cards */
+            object-fit: cover; /* Ajusta a imagem para cobrir o container sem distorção */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Carousel de Imagens -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel"> <!-- Início do carrossel -->
+        <ol class="carousel-indicators"> <!-- Indicadores do carrossel -->
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li> <!-- Indicador para o primeiro item -->
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li> <!-- Indicador para o segundo item -->
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li> <!-- Indicador para o terceiro item -->
+        </ol>
+        <div class="carousel-inner"> <!-- Contém os itens do carrossel -->
+            <div class="carousel-item active"> <!-- Primeiro item do carrossel -->
+                <img src="./Imagem/1.jpg" class="d-block w-100" alt="Imagem 1"> <!-- Imagem do item -->
+            </div>
+            <div class="carousel-item"> <!-- Segundo item do carrossel -->
+                <img src="./Imagem/2.jpg" class="d-block w-100" alt="Imagem 2"> <!-- Imagem do item -->
+            </div>
+            <div class="carousel-item"> <!-- Terceiro item do carrossel -->
+                <img src="./Imagem/3.jpg" class="d-block w-100" alt="Imagem 3"> <!-- Imagem do item -->
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev"> <!-- Controle para o item anterior -->
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span> <!-- Ícone de controle para o item anterior -->
+            <span class="sr-only">Anterior</span> <!-- Texto acessível para o controle -->
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next"> <!-- Controle para o próximo item -->
+            <span class="carousel-control-next-icon" aria-hidden="true"></span> <!-- Ícone de controle para o próximo item -->
+            <span class="sr-only">Próximo</span> <!-- Texto acessível para o controle -->
+        </a>
+    </div>
+
+    <!-- Layout com Grid -->
+    <div class="container mt-5"> <!-- Container para o layout com margem superior -->
+        <div class="row"> <!-- Linha para conter os cards -->
+            <!-- Primeiro Card -->
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4"> <!-- Coluna responsiva: 3 itens por linha em desktop, 2 em tablet e 1 em smartphone -->
+                <div class="card"> <!-- Card -->
+                    <img src="./Imagem/1.jpg" class="card-img-top" alt="Imagem do Card 1"> <!-- Imagem do card -->
+                    <div class="card-body"> <!-- Corpo do card -->
+                        <h5 class="card-title">Canoa</h5> <!-- Título do card -->
+                        <p class="card-text">A canoa é uma embarcação tradicional usada há séculos para transporte e lazer. Feita geralmente de madeira, 
+                            mas também em materiais modernos como fibra de vidro, a canoa é leve e fácil de manobrar. Ideal para explorar rios, lagos e até mesmo o mar calmo, 
+                            proporciona uma experiência íntima com a natureza.</br> Em muitos lugares, é utilizada em competições e atividades recreativas. 
+                            A prática de canoagem pode ser tanto relaxante quanto desafiadora, dependendo do ambiente e das condições.</p> <!-- Texto do card -->
+                        <a href="#" class="btn btn-primary">Ir para algum lugar</a> <!-- Botão do card -->
+                    </div>
+                </div>
+            </div>
+            <!-- Segundo Card -->
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4"> <!-- Coluna responsiva -->
+                <div class="card"> <!-- Card -->
+                    <img src="./Imagem/2.jpg" class="card-img-top" alt="Imagem do Card 2"> <!-- Imagem do card -->
+                    <div class="card-body"> <!-- Corpo do card -->
+                        <h5 class="card-title">Raízes de Árvores Fortes</h5> <!-- Título do card -->
+                        <p class="card-text">As raízes de árvores fortes desempenham um papel crucial na estabilidade e saúde das árvores. Elas se estendem profundamente no solo, 
+                            ancorando a árvore e absorvendo nutrientes e água essenciais. Essas raízes também ajudam a prevenir a erosão do solo, contribuindo para a integridade do ecossistema. 
+                            Em muitos casos, a robustez das raízes é um indicador da longevidade da árvore. Além de sua função ecológica, raízes fortes também servem de habitat para várias espécies de fauna e flora.</p> <!-- Texto do card -->
+                        <a href="#" class="btn btn-primary">Ir para algum lugar</a> <!-- Botão do card -->
+                    </div>
+                </div>
+            </div>
+            <!-- Terceiro Card -->
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4"> <!-- Coluna responsiva -->
+                <div class="card"> <!-- Card -->
+                    <img src="./Imagem/3.jpg" class="card-img-top" alt="Imagem do Card 3"> <!-- Imagem do card -->
+                    <div class="card-body"> <!-- Corpo do card -->
+                        <h5 class="card-title">Lago Limpo e Lindo</h5> <!-- Título do card -->
+                        <p class="card-text">O lago limpo e lindo é um refúgio de tranquilidade e beleza natural. 
+                            Suas águas cristalinas refletem o céu e a vegetação ao redor, criando uma paisagem serena. 
+                            É o local ideal para atividades relaxantes, como passeios de barco e piqueniques à beira d'água. 
+                            A fauna aquática que habita o lago contribui para a diversidade e equilíbrio ecológico da região. 
+                            Muitas vezes, lagos assim são preservados como áreas de proteção ambiental, 
+                            garantindo que sua beleza e pureza sejam mantidas para as futuras gerações.</p> <!-- Texto do card -->
+                        <a href="#" class="btn btn-primary">Ir para algum lugar</a> <!-- Botão do card -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script> <!-- Link para o jQuery -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script> <!-- Link para o Popper.js -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> <!-- Link para o JavaScript do Bootstrap -->
+</body>
+</html>
