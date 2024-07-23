@@ -1,0 +1,14 @@
+body {
+    padding-top: 20px; /* Espaçamento no topo do corpo */
+    padding-bottom: 20px; /* Espaçamento na parte inferior do corpo */
+}
+
+.carousel-item img {
+    max-height: 500px; /* Altura máxima das imagens do carrossel */
+    object-fit: cover; /* Ajusta a imagem para cobrir o container sem distorção */
+}
+
+.card-img-top {
+    max-height: 200px; /* Altura máxima das imagens dos cards */
+    object-fit: cover; /* Ajusta a imagem para cobrir o container sem distorção */
+}
